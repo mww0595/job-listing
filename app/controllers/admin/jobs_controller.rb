@@ -7,8 +7,8 @@ class Admin::JobsController < ApplicationController
   end
 
   def index
-    @jobs = Job.where(:is_hidden => false).order("created_at DESC")
-  end
+      @jobs = Job.all
+    end
 
   def new
     @job = Job.new
