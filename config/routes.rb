@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
 
+  get 'about' => 'welcome#about'
+
   namespace :admin do
     resources :jobs do
       member do
