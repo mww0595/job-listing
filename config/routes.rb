@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  get 'about' => 'welcome#about'
+    root 'welcome#index'
+    get 'showindex' => 'jobs#showindex'
+
+    get 'about' => 'welcome#about'
 
   namespace :admin do
     resources :jobs do
@@ -14,8 +17,8 @@ Rails.application.routes.draw do
   end
 
  resources :jobs do
+
    resources :resumes
  end
 
-  root 'welcome#index'
 end
