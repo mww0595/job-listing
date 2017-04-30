@@ -1,9 +1,12 @@
 
 <div class="header" id="demo">
 
+<!--音乐 END-->
+
 	<div class="topcn" style="font:20px/18px 'microsoft yahei'; color:#0FF;text-align:center;">
 	  <!-- <p>&nbsp;</p> -->
 
+		<!--音乐 START-->
 
 
 
@@ -27,7 +30,9 @@
 
   <canvas id="canvas"></canvas>
 
-			<h3 align="center">-------KKK--------</h3>
+			<h3 align="center"><font color="gray">
+				<hr style="height:1px;width:500px;border:none;border-top:2px solid #7B7B7B;" />
+					<a href="#ct1"><%= image_tag 'down.png',size:'90x50'%></a></h3></font>
 
 	<%= image_tag 'boot.jpg', class: 'img-responsive '  %>
 	<br>
@@ -59,7 +64,7 @@
 
 	      <div class="col-sm-6 col-md-3">
 					<br>
-	         <div class="rounded">
+	         <div id="ct1" class="rounded">
 	           <%= image_tag 'pic-3.jpg', class: 'img-responsive img-rounded' , size:'350x250' %>
 	          <h2 align="center">建设工程部队</h2>
 	          <p><span class="glyphicon glyphicon-chevron-right">对新殖民星的开发进行准备工作;</span>
@@ -78,12 +83,6 @@
 
 
 
-
-<!--音乐 START-->
-	<audio controls="true" autoplay="autoplay" class="audio">
-        <source src="Music.mp3" type="audio/mp3">
-    </audio>
-<!--音乐 END-->
 
 
 <script>
