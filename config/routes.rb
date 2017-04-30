@@ -2,9 +2,6 @@ Rails.application.routes.draw do
   devise_for :users
 
     root 'welcome#index'
-    get 'showindex' => 'jobs#showindex'
-
-    get 'about' => 'welcome#about'
 
   namespace :admin do
     resources :jobs do

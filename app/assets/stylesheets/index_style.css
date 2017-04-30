@@ -37,6 +37,18 @@
 
 }*/
 
+.audio{
+/*设置音乐显示位置*/
+	width:45px;
+	position:fixed;top:65px;left:94%;
+	z-index:100;
+	filter:alpha(opacity=30);
+      -moz-opacity:0.3;
+      -khtml-opacity: 0.3;
+      opacity: 0.3;
+	}
+
+
 
 .header	.topcn{
 	width: 980px;
